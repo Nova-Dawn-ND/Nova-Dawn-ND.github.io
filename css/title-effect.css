@@ -1,0 +1,18 @@
+/* 页面横幅标题特效 - NOVA-DAWN */
+#site-title {
+  display: inline-block;
+  animation: title-float 3.5s ease-in-out infinite;
+}
+
+#site-subtitle {
+  animation: title-float 3.5s ease-in-out 0.4s infinite;
+}
+
+@keyframes title-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
