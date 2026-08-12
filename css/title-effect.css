@@ -16,3 +16,90 @@
     transform: translateY(-12px);
   }
 }
+
+/* ===== 页头/页脚透明（所有页面） ===== */
+#page-header.full_page,
+#page-header.post-bg,
+#page-header.page-bg,
+#footer {
+  background: transparent !important;
+}
+#page-header.post-bg::before,
+#page-header.page-bg::before {
+  background-color: transparent !important;
+}
+
+/* ===== 文章页背景换成 post.jpg（首页保持 beijing.webp） ===== */
+body:has(#body-wrap.post) #web_bg { background-image: url(/imgs/post.jpg) !important; }
+
+/* ===== 毛玻璃卡片（浅色模式） ===== */
+#body-wrap .recent-post-item,
+#body-wrap #aside-content .card-widget,
+#body-wrap .layout > div:first-child:not(.recent-posts),
+#body-wrap #nav .menus_items .menus_item .menus_item_child,
+#body-wrap #pagination .page-number:not(.current),
+#body-wrap #pagination .extend,
+#body-wrap #pagination.pagination-post {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 16px -4px rgba(138, 138, 138, 0.15);
+  transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== 文章信息卡片（题目/时间/阅读量）改为透明 ===== */
+#page-header #post-info {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* ===== 毛玻璃卡片（夜间模式，浅色 0.15） ===== */
+html[data-theme="dark"] #body-wrap .recent-post-item,
+html[data-theme="dark"] #body-wrap #aside-content .card-widget,
+html[data-theme="dark"] #body-wrap .layout > div:first-child:not(.recent-posts),
+html[data-theme="dark"] #body-wrap #nav .menus_items .menus_item .menus_item_child,
+html[data-theme="dark"] #body-wrap #pagination .page-number:not(.current),
+html[data-theme="dark"] #body-wrap #pagination .extend,
+html[data-theme="dark"] #body-wrap #pagination.pagination-post {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== 白天模式文字颜色（统一白色） ===== */
+html:not([data-theme="dark"]) #site-title,
+html:not([data-theme="dark"]) #site-subtitle,
+html:not([data-theme="dark"]) #nav #blog-info .site-name,
+html:not([data-theme="dark"]) #nav .site-page,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item > a > span,
+html:not([data-theme="dark"]) #nav .menus_items .menus_item > a > i,
+html:not([data-theme="dark"]) #footer,
+html:not([data-theme="dark"]) #footer a,
+html:not([data-theme="dark"]) #footer span {
+  color: #fff !important;
+  text-shadow: none !important;
+}
+
+/* 白天：文章信息卡片（文章名/时间）文字（透明背景+白色文字阴影保证可读） */
+html:not([data-theme="dark"]) #page-header #post-info .post-title,
+html:not([data-theme="dark"]) #page-header #post-info #post-meta,
+html:not([data-theme="dark"]) #page-header #post-info #post-meta a,
+html:not([data-theme="dark"]) #page-header #post-info #post-meta .post-meta-separator,
+html:not([data-theme="dark"]) #page-header #post-info #post-meta i {
+  color: #fff !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* ===== 夜间模式文字颜色（保持浅色） ===== */
+html[data-theme="dark"] #page-header #post-info .post-title,
+html[data-theme="dark"] #page-header #post-info #post-meta,
+html[data-theme="dark"] #page-header #post-info #post-meta a,
+html[data-theme="dark"] #page-header #post-info #post-meta .post-meta-separator,
+html[data-theme="dark"] #page-header #post-info #post-meta i {
+  color: #fff !important;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
+}
