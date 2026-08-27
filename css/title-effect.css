@@ -103,3 +103,16 @@ html[data-theme="dark"] #page-header #post-info #post-meta i {
   color: #fff !important;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.6) !important;
 }
+
+/* ===== 夜间模式代码框滚动条增强 ===== */
+html[data-theme="dark"] {
+  --hlscrollbar-bg: rgba(255, 255, 255, 0.25) !important;
+}
+html[data-theme="dark"] figure.highlight table::-webkit-scrollbar-thumb,
+html[data-theme="dark"] .container pre[class*='language-']::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25) !important;
+}
+html[data-theme="dark"] figure.highlight table::-webkit-scrollbar-thumb:hover,
+html[data-theme="dark"] .container pre[class*='language-']::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.45) !important;
+}
